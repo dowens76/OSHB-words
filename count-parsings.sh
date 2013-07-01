@@ -1,1 +1,2 @@
-perl -nwE 'print; for my $s (/([^,])\n/g) { say "Lines parsed: ", $s }' parsings.csv # Does not work
+echo "Parsed lines: "
+grep -c -v ",$" parsings.csv
